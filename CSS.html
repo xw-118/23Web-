@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>css核心概念：背景、盒模型、布局、动画</title>
+  <style>
+    /* 修改 body 背景颜色为淡蓝色 */
+    body{
+      background-color: #ADD8E6; 
+    }
+  </style>
+</head>
+<body>
+  <!-- 修复：移除多余的结束标签 -->
+   <section>
+    <h2>盒模型</h2>
+    <style>
+.box {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #000;
+    padding: 20px;
+    margin: 10px;
+    /* 修改盒子背景颜色为淡绿色 */
+    background-color: #90EE90; 
+}
+    </style>
+    <div class="box"></div>
+    <div class="box"></div>
+
+    <!-- 移除多余的 </style> 标签 -->
+    <h1>背景</h1>
+    <p>背景是网页元素的重要组成部分，它可以为网页增添视觉吸引力和信息传达效果。在CSS中，我们可以使用各种属性来控制背景的外观和行为。</p>
+  <h1>网页标题示例</h1>
+  <h2>背景</h2>
+<div>
+  <p>
+    西北民族大学是中华人民共和国成立后创建的第一所民族高等学府，隶属于国家民委，是国家民委与教育部、国家民委与甘肃省人民政府共建院校，是甘肃省确定的高水平大学建设单位。
+  </p>
+</div>
+   </section>
+   <div class="display-demo">
+    <p style="display: block;">段1（block）</p>
+    <p style="display: inline;">段2（inline）</p>
+    <p style="display: inline-block;">段3（inline-block）</p>
+    <p style="display: none;">段4（none）</p>
+    <p style="display: flex;">段5（flex）</p>
+<div class="box">
+  <p>这是一个段落，介绍了网页的基本内容。</p>      
+  <h2>动画</h2> 
+  动画必须要有起始状态、结束状态和中间状态、时长
+  <style>
+  .animate {
+      width: 100px;
+      height: 100px;
+      /* 修改动画元素初始背景颜色为粉色 */
+      background-color: #FFB6C1; 
+      position: relative;
+      animation: mymove 5s infinite;
+  }
+  
+  @keyframes mymove {
+      0%   {left: 0px; background-color: #FFB6C1;}
+      50%  {left: 200px; background-color: #FFFF00;}
+      100% {left: 0px; background-color: #FFB6C1;}
+  }
+  </style>
+  <div class="animate"></div>            
+</body>
+</html>
